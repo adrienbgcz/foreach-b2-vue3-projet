@@ -11,11 +11,11 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "types" : ["vite-plugin-pages/client"]
+    "types" : ["vite-plugin-pages/client", "@intlify/vite-plugin-vue-i18n/client" ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "vite.config.ts"],
   "references": [{ "path": "./tsconfig.node.json" }],
-  "paths": {
-    "@/*": ["./src/*"]
-  },
 }
