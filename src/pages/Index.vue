@@ -1,13 +1,13 @@
-<template>
-$END$
-</template>
+<script setup lang="ts">
 
-<script>
-export default {
-name: "Index"
-}
+const { t } = useI18n()
+
+const route = useRoute()
+
+onMounted(() => console.log(route.fullPath))
 </script>
 
-<style scoped>
+<template>
+  <h1>Home</h1>
 
-</style>
+</template>

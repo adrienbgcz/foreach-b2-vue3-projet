@@ -5,7 +5,8 @@ import autoImport from 'unplugin-auto-import/vite'
 import { fileURLToPath } from 'url'
 import vueI18n from '@intlify/vite-plugin-vue-i18n'
 import {resolve} from "path"
-import WindiCSS from 'vite-plugin-windicss'
+import windiCSS from 'vite-plugin-windicss'
+import icons from 'unplugin-icons/vite'
 
 
 // https://vitejs.dev/config/
@@ -16,7 +17,8 @@ export default defineConfig({
             vueI18n({
             include: resolve(__dirname, './locales/**')
             }),
-            WindiCSS()
+            windiCSS(),
+            icons()
             ],
 
 

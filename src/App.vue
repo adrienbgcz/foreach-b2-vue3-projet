@@ -3,10 +3,11 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 
 import { RouterView } from 'vue-router'
-
+import NavBar from './components/navBar.vue'
 </script>
 
 <template >
+  <NavBar />
   <RouterView />
 </template>
 
@@ -23,7 +24,7 @@ import { RouterView } from 'vue-router'
 
 html {
   background-color: #F2F4F6;
-  width: 85%;
+  width: 75%;
   margin:auto;
 }
 </style>

@@ -1,10 +1,13 @@
 <script setup lang="ts">
-import NavBar from '../components/navBar.vue'
+
 const { t } = useI18n()
+
+const route = useRoute()
+
+onMounted(() => console.log(route.fullPath))
 </script>
 
 <template>
-  <NavBar />
   <h1>Education</h1>
 
 </template>

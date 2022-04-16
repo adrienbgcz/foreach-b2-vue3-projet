@@ -11,7 +11,7 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": ["esnext", "dom"],
-    "types" : ["vite-plugin-pages/client", "@intlify/vite-plugin-vue-i18n/client" ],
+    "types" : ["vite-plugin-pages/client", "@intlify/vite-plugin-vue-i18n/client", "unplugin-icons/types/vue", "node" ],
     "paths": {
       "@/*": ["./src/*"]
     },

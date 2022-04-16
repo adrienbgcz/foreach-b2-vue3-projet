@@ -1,26 +1,59 @@
 <script setup lang="ts">
   import {RouterLink} from 'vue-router'
+  import navConstants from '../constants/navigationConstants'
   const {t} = useI18n()
+  const route = useRoute()
+  import IcRoundMinus from '~icons/ic/round-minus'
 
 </script>
 
 <template>
-  <div w:flex="~" w:justify="center">
-    <RouterLink to="/" class="text_style">{{t('about')}}</RouterLink>
-    <RouterLink to="/education" class="text_style">{{ t('education') }}</RouterLink>
-    <RouterLink to="/experience" class="text_style">{{ t('experience') }}</RouterLink>
+  <div class="flex justify-between mt-4 items-center" >
+    <img src="../assets/profil.jpg" w:w="24" w:rounded="9xl"  />
+    <div class="flex justify-center">
+      <div class="flex flex-col items-center" >
+        <RouterLink :to="`/`" :class="{text_style_clicked:route.fullPath===`/`}" class="text_style">{{t('home')}}</RouterLink>
+        <IcRoundMinus class="animate-fadeIn" :class="{underline:route.fullPath===`/`, hidden:route.fullPath!==`/`}"/>
+      </div>
+      <div class="flex flex-col items-center" >
+        <RouterLink :to="`/${navConstants.PRESENTATION}`" :class="{text_style_clicked:route.fullPath===`/${navConstants.PRESENTATION}`}" class="text_style">{{t('about')}}</RouterLink>
+        <IcRoundMinus class="animate-fadeIn" :class="{underline:route.fullPath===`/${navConstants.PRESENTATION}`, hidden:route.fullPath!==`/${navConstants.PRESENTATION}`}"/>
+      </div>
+      <div class="flex flex-col items-center">
+        <RouterLink :to="`/${navConstants.EDUCATION}`" :class="{text_style_clicked:route.fullPath===`/${navConstants.EDUCATION}`}" class="text_style" >{{ t('education') }}</RouterLink>
+        <IcRoundMinus class="animate-fadeIn" :class="{underline:route.fullPath===`/${navConstants.EDUCATION}`, hidden:route.fullPath!==`/${navConstants.EDUCATION}`}" />
+      </div>
+      <div class="flex flex-col items-center">
+        <RouterLink :to="`/${navConstants.EXPERIENCE}`" :class="{text_style_clicked:route.fullPath===`/${navConstants.EXPERIENCE}`}" class="text_style" >{{ t('experience') }}</RouterLink>
+        <IcRoundMinus class="animate-fadeIn" :class="{underline:route.fullPath===`/${navConstants.EXPERIENCE}`, hidden:route.fullPath!==`/${navConstants.EXPERIENCE}`}" />
+      </div>
+    </div>
+    <button class="bg-secondary text-white text-sm font-weight-semibold rounded-xl h-10 px-4 mb-10 shadow-xl ">
+      {{t('contact')}}
+    </button>
   </div>
-  <button class="bg-sky-500 text-white font-weight-semibold p-3 rounded-xl">
-    {{t('contact')}}
-  </button>
 </template>
 
 <style scoped>
-.text_style {
-  @apply hover:text-sky-500
+.text_style_clicked {
+  @apply text-secondary
   @apply font-medium
-  @apply hover:underline
-  @apply p-4
+  @apply px-4
+}
+
+.underline {
+  @apply text-3xl
+  @apply text-secondary
+}
+
+
+.text_style {
+  @apply font-medium
+  @apply px-4
+}
+
+.hidden {
+  display:none;
 }
 
 </style>
