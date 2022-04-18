@@ -12,19 +12,19 @@
     <img src="../assets/profil.jpg" w:w="24" w:rounded="9xl"  />
     <div class="flex justify-center">
       <div class="flex flex-col items-center" >
-        <RouterLink :to="`/`" :class="{text_style_clicked:route.fullPath===`/`}" class="text_style">{{t('home')}}</RouterLink>
+        <RouterLink :to="`/`" :class="{text_style_clicked:route.fullPath===`/`}" class="text_style text-darkGrey">{{t('home')}}</RouterLink>
         <IcRoundMinus class="animate-fadeIn" :class="{underline:route.fullPath===`/`, hidden:route.fullPath!==`/`}"/>
       </div>
       <div class="flex flex-col items-center" >
-        <RouterLink :to="`/${navConstants.PRESENTATION}`" :class="{text_style_clicked:route.fullPath===`/${navConstants.PRESENTATION}`}" class="text_style">{{t('about')}}</RouterLink>
+        <RouterLink :to="`/${navConstants.PRESENTATION}`" :class="{text_style_clicked:route.fullPath===`/${navConstants.PRESENTATION}`}" class="text_style text-darkGrey">{{t('about')}}</RouterLink>
         <IcRoundMinus class="animate-fadeIn" :class="{underline:route.fullPath===`/${navConstants.PRESENTATION}`, hidden:route.fullPath!==`/${navConstants.PRESENTATION}`}"/>
       </div>
       <div class="flex flex-col items-center">
-        <RouterLink :to="`/${navConstants.EDUCATION}`" :class="{text_style_clicked:route.fullPath===`/${navConstants.EDUCATION}`}" class="text_style" >{{ t('education') }}</RouterLink>
+        <RouterLink :to="`/${navConstants.EDUCATION}`" :class="{text_style_clicked:route.fullPath===`/${navConstants.EDUCATION}`}" class="text_style text-darkGrey" >{{ t('education') }}</RouterLink>
         <IcRoundMinus class="animate-fadeIn" :class="{underline:route.fullPath===`/${navConstants.EDUCATION}`, hidden:route.fullPath!==`/${navConstants.EDUCATION}`}" />
       </div>
       <div class="flex flex-col items-center">
-        <RouterLink :to="`/${navConstants.EXPERIENCE}`" :class="{text_style_clicked:route.fullPath===`/${navConstants.EXPERIENCE}`}" class="text_style" >{{ t('experience') }}</RouterLink>
+        <RouterLink :to="`/${navConstants.EXPERIENCE}`" :class="{text_style_clicked:route.fullPath===`/${navConstants.EXPERIENCE}`}" class="text_style text-darkGrey" >{{ t('experience') }}</RouterLink>
         <IcRoundMinus class="animate-fadeIn" :class="{underline:route.fullPath===`/${navConstants.EXPERIENCE}`, hidden:route.fullPath!==`/${navConstants.EXPERIENCE}`}" />
       </div>
     </div>

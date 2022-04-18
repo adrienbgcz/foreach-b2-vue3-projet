@@ -3,5 +3,9 @@
   "education" : "Formation",
   "experience" : "Expérience",
   "contact": "DISCUTONS",
-  "home" : "Accueil"
+  "home" : "Accueil",
+  "hello" : "Bonjour, je suis",
+  "firstName": "Adrien",
+  "github": "Voir mon Github",
+  "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 }
