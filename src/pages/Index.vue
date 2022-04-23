@@ -18,10 +18,12 @@ const route = useRoute()
       <img src="../assets/—Pngtree—man silhouette_5999627.png" />
     </div>
     <div class="w-50" >
-      <img src="src/assets/github.png" />
-      <button class="bg-white text-secondary text-sm font-weight-semibold rounded-xl h-10 w-30 px-4 mb-10 shadow-xl mt-5 ">
-        {{t('github')}}
-      </button>
+      <a href="https://github.com/adrienbgcz">
+        <img src="src/assets/github.png" />
+        <button class="bg-white text-secondary text-sm font-weight-semibold rounded-xl h-10 w-30 px-4 mb-10 shadow-xl mt-5 ">
+          {{t('github')}}
+        </button>
+      </a>
     </div>
   </div>
 </template>

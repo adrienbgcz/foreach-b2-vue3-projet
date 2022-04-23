@@ -8,7 +8,8 @@ export default defineConfig({
     extend: {
       colors: {
         secondary: '#0C8FE5',
-        darkGrey: '#424C52'
+        darkGrey: '#424C52',
+        lightGrey:'#F2F4F6'
       }
     },
   },

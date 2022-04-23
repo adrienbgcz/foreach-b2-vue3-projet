@@ -1,16 +1,19 @@
 <script setup lang="ts">
   import {RouterLink} from 'vue-router'
   import navConstants from '../constants/navigationConstants'
+  import IcRoundMinus from '~icons/ic/round-minus'
+
   const {t} = useI18n()
   const route = useRoute()
-  import IcRoundMinus from '~icons/ic/round-minus'
+  const {locale}  = useI18n()
+
 
 </script>
 
 <template>
-  <div class="flex justify-between mt-4 items-center" >
+  <div class="flex flex-wrap justify-between mt-4 items-center" >
     <img src="../assets/profil.jpg" w:w="24" w:rounded="9xl"  />
-    <div class="flex justify-center">
+    <div class="flex flex-wrap justify-center">
       <div class="flex flex-col items-center" >
         <RouterLink :to="`/`" :class="{text_style_clicked:route.fullPath===`/`}" class="text_style text-darkGrey">{{t('home')}}</RouterLink>
         <IcRoundMinus class="animate-fadeIn" :class="{underline:route.fullPath===`/`, hidden:route.fullPath!==`/`}"/>
@@ -27,6 +30,12 @@
         <RouterLink :to="`/${navConstants.EXPERIENCE}`" :class="{text_style_clicked:route.fullPath===`/${navConstants.EXPERIENCE}`}" class="text_style text-darkGrey" >{{ t('experience') }}</RouterLink>
         <IcRoundMinus class="animate-fadeIn" :class="{underline:route.fullPath===`/${navConstants.EXPERIENCE}`, hidden:route.fullPath!==`/${navConstants.EXPERIENCE}`}" />
       </div>
+    </div>
+    <div class="flex flex-col items-center">
+      <div>
+        <span @click="locale = 'fr'" :class="{locale_selected:locale==='fr', locale_unselected:locale!=='fr'}">FR </span><span @click="locale = 'en'" :class="{locale_selected:locale==='en', locale_unselected:locale!=='en'}">EN</span>
+      </div>
+      <IcRoundMinus class="underline-hidden" />
     </div>
     <button class="bg-secondary text-white text-sm font-weight-semibold rounded-xl h-10 px-4 mb-10 shadow-xl ">
       {{t('contact')}}
@@ -46,6 +55,10 @@
   @apply text-secondary
 }
 
+.underline-hidden {
+  @apply text-3xl
+  @apply text-lightGrey
+}
 
 .text_style {
   @apply font-medium
@@ -53,7 +66,17 @@
 }
 
 .hidden {
-  display:none;
+  display: none;
 }
 
+.locale_selected {
+  color:#424C52;
+  cursor: pointer;
+
+}
+
+.locale_unselected {
+  color: #D3D7DB;
+  cursor: pointer;
+}
 </style>
