@@ -8,7 +8,7 @@ import NavBar from './components/navBar.vue'
 
 <template>
   <NavBar />
-  <img class="circle" src="src/assets/circle.png"/>
+  <img class="circle" src="/src/assets/circle.png"/>
   <RouterView />
 </template>
 

@@ -37,9 +37,11 @@
       </div>
       <IcRoundMinus class="underline-hidden" />
     </div>
-    <button class="bg-secondary text-white text-sm font-weight-semibold rounded-xl h-10 px-4 mb-10 shadow-xl ">
-      {{t('contact')}}
-    </button>
+      <a href="https://www.linkedin.com/in/adrien-bogacz-04aa6020a">
+        <button class="bg-secondary text-white text-sm font-weight-semibold rounded-xl h-10 px-4 mb-10 shadow-xl ">
+          {{t('contact')}}
+        </button>
+      </a>
   </div>
 </template>
 
