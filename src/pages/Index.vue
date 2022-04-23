@@ -15,7 +15,7 @@ const route = useRoute()
       <div class="mt-5 text-darkGrey text-left">{{t('intro')}}</div>
     </div>
     <div class="w-200">
-      <img src="../assets/—Pngtree—man silhouette_5999627.png" />
+      <img src="../assets/temporaryIndexImage.png" />
     </div>
     <div class="w-50" >
       <a href="https://github.com/adrienbgcz">
