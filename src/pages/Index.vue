@@ -8,6 +8,7 @@ const route = useRoute()
 </script>
 
 <template>
+  <img class="circle" src="/src/assets/circle.png"/>
   <div class="flex items-center mt-15">
     <div class="flex-col w-120">
       <div class="hello text-2xl text-left">{{t('hello')}}</div>
@@ -36,6 +37,14 @@ const route = useRoute()
 }
 .firstName {
   font-family: "Bungee Shade", cursive;
+}
+
+.circle {
+  width: 70%;
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
 </style>
