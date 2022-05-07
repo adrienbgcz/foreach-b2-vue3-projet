@@ -4,7 +4,6 @@ const { t } = useI18n()
 
 const route = useRoute()
 
-onMounted(() => console.log(route.fullPath))
 
 </script>
 

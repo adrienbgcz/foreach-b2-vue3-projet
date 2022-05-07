@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import IcBaselineCheckBox from '~icons/ic/baseline-check-box'
 const { t } = useI18n()
 
 defineProps({
@@ -8,25 +9,26 @@ defineProps({
   },
   date2: {
     type: String,
-    required: true,
+    required: false,
   },
-  formationName: {
+  experienceName: {
     type: String,
     required: true,
   },
-  school: {
+  enterprise: {
     type: String,
     required: true
   },
-  city: {
+  description: {
     type: String,
+    required: true
+  },
+  details : {
+    type: Array,
     required: true
   }
-})
 
-/*
-const emit = defineEmits(['update:done'])
-*/
+})
 
 
 </script>
@@ -44,9 +46,18 @@ const emit = defineEmits(['update:done'])
       </div>
     </div>
 
-    <div class="p-5 ml-10 flex justify-center align-center">
-      <span><span class="font-bold">{{formationName}}</span> / <span class="text-secondary">{{school}}</span> {{city}}</span>
+    <div class="p-5 ml-10 flex flex-col">
+      <span class="text-left"><span class="font-bold">{{experienceName}}</span> / <span class="text-secondary">{{enterprise}}</span> {{description}}</span>
+      <div v-for="detail in details" :key="detail">
+        <ul>
+          <li class="text-left">
+            <span><IcBaselineCheckBox class="inline text-secondary mr-2"/>{{ detail }}</span>
+          </li>
+        </ul>
+      </div>
     </div>
+
+
   </div>
 </template>
 

@@ -7,5 +7,26 @@
   "hello" : "Hello, moi c'est",
   "firstName": "Adrien",
   "github": "Voir mon Github",
-  "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "intro": "Éducateur sportif reconverti en développeur web fullstack. Toujours pratiquant de basket, course à pied et musculation et friand de voyages.",
+  "detailsForeach1" : "Node.js/Express",
+  "detailsForeach2" : "SQL/PostgreSQL",
+  "detailsForeach3" : "HTML/CSS/Javascript/Vue.js",
+  "experienceNameForeach" : "Projet Imm-IT",
+  "descriptionForeach": "Création d'une application Web de réservation et de recherche de logements (Base de données, API REST avec CRUD, Client Web)",
+
+  "experienceNameDynacare" : "Référent métier de l'application mobile Jebooj",
+  "descriptionDynacare" : "En tant qu'éducateur sportif, collaboration avec une équipe de développement pour la création d'une application mobile Sport Santé",
+  "detailsDynacare1" : "Rédaction des fonctionnalités détaillées, recette et validation",
+  "detailsDynacare2" : "Participation aux démos",
+  "detailsDynacare3" : "Interlocuteur privilégié de l'équipe de développement",
+
+  "experienceNameDecathlon" : "Projet Mobile Device Management",
+  "descriptionDecathlon" : "Apprenti développeur fullstack au sein du projet MDM, chargé de la gestion des appareils mobiles (smartphones, tablettes et kiosks) de l'entreprise",
+  "detailsDecathlon1" : "Node.js/Express",
+  "detailsDecathlon2" : "PostgreSQL/BigQuery/ElasticSearch/GraphQL",
+  "detailsDecathlon3" : "Vue.js",
+  "detailsDecathlon4" : "GCP, AWS",
+
+  "to" : "à",
+  "now" : "maintenant"
 }

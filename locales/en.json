@@ -7,5 +7,27 @@
   "hello" : "Hello, I'm",
   "firstName": "Adrien",
   "github": "See my Github",
-  "intro": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  "intro": "Sports educator converted into a fullstack web developer. Always practicing basketball, running and strength training and travelling lover.",
+
+  "experienceNameForeach" : "Imm-IT project",
+  "descriptionForeach" : "Creation of web app to search and book housing (Database, REST API with CRUD, Web Client)",
+  "detailsForeach1" : "Node.js/Express",
+  "detailsForeach2" : "SQL/PostgreSQL",
+  "detailsForeach3" : "HTML/CSS/Javascript/Vue.js",
+
+  "experienceNameDynacare" : "Referent of the Jebooj mobile application",
+  "descriptionDynacare" : "As a sports educator, collaboration with a development team for the creation of a Sport and Health mobile application",
+  "detailsDynacare1" : "Drafting of detailed functionalities, computer testing and validation",
+  "detailsDynacare2" : "Participation in demos",
+  "detailsDynacare3" : "Privileged interlocutor of the development team",
+
+  "experienceNameDecathlon" : "Mobile Device Management project",
+  "descriptionDecathlon" : "Apprentice fullstack developer within the MDM project, responsible for managing the company's mobile devices (smartphones, tablets and kiosks)",
+  "detailsDecathlon1" : "Node.js/Express",
+  "detailsDecathlon2" : "PostgreSQL/BigQuery/ElasticSearch/GraphQL",
+  "detailsDecathlon3" : "Vue.js",
+  "detailsDecathlon4" : "GCP, AWS",
+
+  "to" : "to",
+  "now" : "now"
 }
